@@ -70,8 +70,7 @@
     }
 
     &__link__list{
-        display: grid;
-        grid-row: inherit;
+        display: flex;
         column-gap: 48px;
 
         @media (max-width: 480px) and (min-width: 320px){
