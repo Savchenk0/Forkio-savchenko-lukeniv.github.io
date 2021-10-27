@@ -1,0 +1,34 @@
+.here-is-what-you-get{
+    background: #F4F4F4;
+    padding-top: 98px;
+}
+.what-you-get{
+    display: flex;
+}
+.here-is-what-you-get__benefit{
+    display: flex;
+}
+.here-is-what-you-get__benefit-text{
+    width: 406px;
+}
+#logo-1{
+    margin-right: 24px;
+}
+#logo-2{
+    margin-right: 45px;
+}
+#logo-3{
+    margin-right: 60px;
+}
+#logo-4{
+    margin-right: 53px;
+}
+.here-is-what-you-get__benefit-paragraph{
+    @include gray-description;
+}
+.here-is-what-you-get__heading{
+    color: $purple;
+    font-size: 48px;
+    line-height: 50px;
+    font-family: Montserrat;    
+}
