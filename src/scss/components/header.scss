@@ -15,6 +15,7 @@
     @media (max-width: 992px) and (min-width: 481px){
         padding: 22px 20px 18px 20px;
         background: #27262A;
+        flex-wrap: wrap;                      
     }
 
     @media (max-width: 480px) and (min-width: 320px){
@@ -27,7 +28,10 @@
         display: flex;
         align-items: center;
         column-gap: 17px;
-
+        @media (max-width: 992px) and (min-width: 481px){
+            
+        
+        }
     }
 
     &__logo__icon{
@@ -58,16 +62,16 @@
     &__link{
         display: flex;
         align-items: center;
-        // display: block;
+        @media (max-width: 992px) and (min-width: 481px){
+            order: 1;  
+            margin: auto;
+            margin-top: 23px;
+         }
     }
 
     &__link__list{
         display: flex;
         column-gap: 48px;
-        @media (max-width: 992px) and (min-width: 481px){
-            order: 1;
-            flex-wrap: wrap;
-        }
 
         @media (max-width: 480px) and (min-width: 320px){
             display: none;
@@ -92,7 +96,9 @@
         font-size: 16px;
         line-height: 17px;
         color: $white;
-
+        @media (max-width: 992px) and (min-width: 481px){
+           
+        }
         padding: 11px 30px;
         background: #8D81AC;
         border: 1px solid $purple;
