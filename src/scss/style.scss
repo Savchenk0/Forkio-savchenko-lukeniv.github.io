@@ -13,15 +13,19 @@ a {
   }
 
 .container{
-    position: relative;
 	  box-sizing: border-box;
-    margin: 0px auto;
-    width: 100%;
-    padding: 0 90px;
-    @media (max-width: 992px) and (min-width: 481px){
-      padding: 0 20px;     
-     }
-     @media (max-width: 480px) and (min-width: 320px){
-      padding: 0px 15px 0px 16px;
-  }
+    margin: 0 auto;
+    width: 1200px;
+    @media (max-width:1199px) and (min-width:993px){
+      width: 100%;
+      padding: 0 90px
+    }
+    @media (max-width: 992px) and (min-width:481px){
+      width: 100%;
+      padding:0 20px;
+    }
+    @media (max-width: 480px){
+      width: 100%;
+      padding:0 15px;
+    }
 }

@@ -1,15 +1,86 @@
+@import '../mixins';
+@import '../variables';
+
 .here-is-what-you-get{
     background: #F4F4F4;
     padding-top: 98px;
+
+&__benefit{
+    display: flex;
+    margin-bottom: 34px;
+
+}
+&__benefit-text{
+    width: 406px;
+    @media (max-width:992px) and (min-width:481px){
+        width: 100%;
+         }
+}
+&__benefit-paragraph{
+    @include gray-description;
+    @media (max-width:992px) and (min-width:481px){
+       width: 100%;
+        }
+}
+&__benefit-logo{
+    height: fit-content;
+}
+&__benefit-heading{
+    font-size: 16px;
+    line-height: 21px;
+    font-family: Montserrat;
+    color: #323232;
+    font-weight: 400;
+    margin-bottom: 16px;
+    @media (max-width:992px) and (min-width:481px){
+        margin-bottom: 8px;
+         }
+}
+&__heading{
+    color: $purple;
+    font-size: 48px;
+    line-height: 50px;
+    font-family: Montserrat;    
+    margin-left: 25px;
+    margin-bottom: 19px;
+    @media (max-width:992px) and (min-width:481px){
+        margin-bottom: 50px;
+        margin-left: 0px;
+        }
+}
+&__description{
+    margin-right: 90px;
+    @media (max-width:992px) and (min-width:481px){
+        margin-right: 0px;
+         }
+}
+&__picture{
+  @media (max-width:992px) and (min-width:481px){
+      display:none
+  }
+  
+}
+&__picture2{
+    @media (max-width:992px) and (min-width:481px){
+        display:block
+    }
+    display: none;
+}
+&__logo-picture{
+    @media (max-width:992px) and (min-width:481px){
+        order: -1;
+        @media (max-width:992px) and (min-width:481px){
+            margin: 0 auto;
+            }
+    }
+}
 }
 .what-you-get{
     display: flex;
-}
-.here-is-what-you-get__benefit{
-    display: flex;
-}
-.here-is-what-you-get__benefit-text{
-    width: 406px;
+    // justify-content: space-between;
+    @media (max-width:992px) and (min-width:481px){
+        flex-wrap: wrap;
+    }
 }
 #logo-1{
     margin-right: 24px;
@@ -19,16 +90,10 @@
 }
 #logo-3{
     margin-right: 60px;
+    margin-left: 15px;
 }
 #logo-4{
     margin-right: 53px;
+    margin-left: 12px
 }
-.here-is-what-you-get__benefit-paragraph{
-    @include gray-description;
-}
-.here-is-what-you-get__heading{
-    color: $purple;
-    font-size: 48px;
-    line-height: 50px;
-    font-family: Montserrat;    
-}
+
