@@ -8,22 +8,30 @@
 &__benefit{
     display: flex;
     margin-bottom: 34px;
-
+    @media (max-width:480px){
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
 }
 &__benefit-text{
     width: 406px;
     @media (max-width:992px) and (min-width:481px){
         width: 100%;
          }
+    @media (max-width:480px){
+            width: 100%;
+        }
+      
 }
 &__benefit-paragraph{
     @include gray-description;
-    @media (max-width:992px) and (min-width:481px){
-       width: 100%;
-        }
 }
 &__benefit-logo{
     height: fit-content;
+    @media (max-width:480px){
+        margin:0;
+    }
 }
 &__benefit-heading{
     font-size: 16px;
@@ -46,54 +54,88 @@
     @media (max-width:992px) and (min-width:481px){
         margin-bottom: 50px;
         margin-left: 0px;
+        font-size: 42px;
+        line-height: 44px;
+    }
+    @media (max-width:480px){
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+           }  
         }
-}
 &__description{
     margin-right: 90px;
     @media (max-width:992px) and (min-width:481px){
         margin-right: 0px;
-         }
+    }
+    @media (max-width:480px){
+            margin-right: 0px;
+    } 
 }
 &__picture{
   @media (max-width:992px) and (min-width:481px){
       display:none
   }
-  
+  @media (max-width:480px){
+    display: none;
+   
+   }
 }
 &__picture2{
     @media (max-width:992px) and (min-width:481px){
-        display:block
+        display:block;
+    }
+    @media (max-width:480px){
+        display:block;
     }
     display: none;
 }
 &__logo-picture{
     @media (max-width:992px) and (min-width:481px){
         order: -1;
-        @media (max-width:992px) and (min-width:481px){
-            margin: 0 auto;
-            }
-    }
+        margin: 0 auto;
+}
+    @media (max-width:480px){
+    order: -1;
+   }
 }
 }
 .what-you-get{
     display: flex;
     // justify-content: space-between;
     @media (max-width:992px) and (min-width:481px){
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    }
+    @media (max-width:480px){
         flex-wrap: wrap;
     }
 }
 #logo-1{
     margin-right: 24px;
+    @media (max-width:480px){
+        margin: 0;
+       }
 }
 #logo-2{
     margin-right: 45px;
+    @media (max-width:480px){
+        margin: 0;
+       }
 }
 #logo-3{
     margin-right: 60px;
     margin-left: 15px;
+    @media (max-width:480px){
+        margin: 0;
+       }
 }
 #logo-4{
     margin-right: 53px;
-    margin-left: 12px
+    margin-left: 12px;
+    @media (max-width:480px){
+        margin: 0;
+       }
 }
 
