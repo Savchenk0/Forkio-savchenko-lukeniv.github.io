@@ -4,7 +4,9 @@
 .here-is-what-you-get{
     background: #F4F4F4;
     padding-top: 98px;
-
+    @media (max-width:992px) {
+        background: #FFFFFF;
+         }
 &__benefit{
     display: flex;
     margin-bottom: 34px;
