@@ -3,15 +3,18 @@
 @import 'mixins';
 @import 'global';
 @import './components/header.scss';
-@import './components/talking-about.scss';
-@import './components/hereiswhatyouget.scss';
 @import './components/revolutionary.scss';
+@import './components/hereiswhatyouget.scss';
+@import './components/talking-about.scss';
+@import './components/subscription.scss';
 
 a {
 	text-decoration: none;
 	cursor: pointer;
   }
-
+.bold{
+  font-weight: bold;
+}
 .container{
 	  box-sizing: border-box;
     margin: 0 auto;
