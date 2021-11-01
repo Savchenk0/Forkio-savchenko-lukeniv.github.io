@@ -1,0 +1,46 @@
+@mixin title($font-size, $color) {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin gray-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #848E97;
+}
+
+@mixin white-description {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;   
+}
+
+@mixin btn{
+    border-radius: 40px;
+    background-color: #8D81AC;
+    border: #8D81AC solid 2px;
+    outline: none;
+    font-weight: bold;
+  
+    cursor: pointer;
+    color: #fff;
+  
+    &:hover{
+      background-color: #fff;
+      border: #8D81AC solid 2px;
+      color: #8D81AC;
+    }
+  }
+
+@mixin MainFont{
+    font-family: 'MainFont', sans-serif ;
+  }

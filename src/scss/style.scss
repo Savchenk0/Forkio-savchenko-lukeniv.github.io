@@ -1,0 +1,34 @@
+@import "reset";
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import './components/header.scss';
+@import './components/revolutionary.scss';
+@import './components/hereiswhatyouget.scss';
+@import './components/talking-about.scss';
+@import './components/subscription.scss';
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+  }
+.bold{
+  font-weight: bold;
+}
+.container{
+	  box-sizing: border-box;
+    margin: 0 auto;
+    width: 1200px;
+    @media (max-width:1199px) and (min-width:993px){
+      width: 100%;
+      padding: 0;
+    }
+    @media (max-width: 992px) and (min-width:481px){
+      width: 100%;
+      padding:0 20px;
+    }
+    @media (max-width: 480px){
+      width: 100%;
+      padding:0 15px;
+    }
+}

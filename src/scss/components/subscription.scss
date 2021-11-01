@@ -1,0 +1,165 @@
+@import '../mixins';
+@import '../variables';
+ 
+.subscription{
+    background-image: url('/src/img/background/fork\ subscription.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 83px;
+    @media (max-width:480px) and (min-width:320px){
+    padding-bottom: 14px;
+    padding-top: 14px;
+    }
+    &__heading{
+        @include title(48px, #FFFFFF);
+        line-height: 50px;
+        @media (max-width:480px) and (min-width:320px){
+            font-size: 28px;
+            line-height: 42px;
+            }
+        @media (max-width:992px) and (min-width:481px){
+            font-size: 42px;
+            line-height: 44px;
+            } 
+    }
+    &__options-wrapper{
+        display: grid;
+        @media (max-width:992px) and (min-width:481px){
+            grid-template-columns: minmax(100px,257px) minmax(100px,257px);
+            row-gap: 70px;
+            column-gap: 25px;
+            margin-top: 39px;
+            justify-content: center;
+        } ;
+        @media (max-width:480px) and (min-width:320px){
+            grid-template-columns: 257px;
+            row-gap: 18px;
+            margin-top: 38px;
+        }
+        grid-template-columns: 1fr 1fr 1.2fr 1fr;
+        margin: 0 auto;
+        margin-top: 112px;
+        column-gap: 15px;
+        justify-content: center;
+    }
+    &__option-name{
+        font-weight: 400;
+        font-family: Montserrat;
+        color: $white;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.17);
+        display: block;
+        text-align: center;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    &__option-info{
+        background-color: rgba(255, 255, 255, 0.11);
+        padding-top: 30px;
+        padding-bottom: 36px;
+        text-align: center;
+    }
+    &__option-price{
+        font-size: 60px;
+        line-height: 90px;
+        text-transform: uppercase;
+        color: $white;
+        font-family: Montserrat;
+    }
+    &__option-month{
+        font-size: 14px;
+        line-height: 16px;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        color: $white;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 60px;
+            height: 5px;
+            background-color: #8D81AC;
+            top: 56px;
+            left: calc(50% - 30px);
+        }
+    }
+    &__option-features{
+        margin-top: 78px;
+        font-size: 16px;
+        line-height: 18px;
+        font-family: Montserrat;
+        color: $white;
+    }
+    &__option-button{
+        text-decoration: none;
+        color: $white;
+        display: inline-block;
+        padding: 15px 37px;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-top: 36px;
+        border-radius: 45px;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        font-family: Montserrat;
+    }
+}
+#option1{
+    margin-top: 54px;
+}
+#option-wrapper3{
+    transform: translateY(-52px);
+    @media (max-width:992px) and (min-width:630px){
+        justify-self: flex-end;
+        width: 299px;
+    } ;
+    @media (max-width:629px) and (min-width:554px){
+        justify-self: flex-end;
+        width: 269px
+    } 
+    @media (max-width:553px) and (min-width:481px){
+        justify-self: flex-end;
+        width: 250px
+    } 
+    @media (max-width:520px) and (min-width:481px){
+        justify-self: flex-end;
+        width: 235px
+    }
+    @media (max-width:480px) and (min-width:320px){
+        transform: translateY(0) translateX(-21px);
+        width: 299px;
+    }
+    & .subscription__option-name{
+        background-color: rgba(0,0,0,0.11);
+        padding:43px 0;
+        margin: 0 auto;
+
+    }
+    & .subscription__option-info{
+        padding-top: 14px;
+        padding-bottom: 47px;
+        background-color: rgba(70,48,72,0.84);
+        & .subscription__option-price{
+            font-size: 82px;
+            line-height: 90px;
+            margin-bottom: 16px;
+        }
+        & .subscription__option-month{
+            &::after{
+                top: 66px;
+            }
+            line-height: 20px;
+        }
+        & .subscription__option-features{
+            margin-top: 91px;
+        }
+        & .subscription__option-button{
+            margin-top: 83px;
+            padding: 18px 48px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
