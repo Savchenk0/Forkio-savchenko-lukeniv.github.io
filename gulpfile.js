@@ -20,11 +20,11 @@ const paths = {
     js: "./src/js/*.js",
     img: "./src/img/*"
   },
-  dist: {
-    css: "./dist/css/",
-    js: "./dist/js/",
-    img: "./dist/img/",
-    self: "./dist/"
+  docs: {
+    css: "./docs/css/",
+    js: "./docs/js/",
+    img: "./docs/img/",
+    self: "./docs/"
   }
 };
 
@@ -35,7 +35,7 @@ const buildJS = () => (
   .pipe(minify())
     .pipe(concat('script.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest(paths.dist.js))
+    .pipe(gulp.dest(paths.docs.js))
     .pipe(browserSync.stream())
 );
 
@@ -45,19 +45,19 @@ const buildCSS = () => (
     .pipe(concat('style.min.css'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(autoprefixer({cascade: false	}))
-    .pipe(gulp.dest(paths.dist.css))
+    .pipe(gulp.dest(paths.docs.css))
     .pipe(browserSync.stream())
 );
 
 const buildIMG = () => (
   gulp.src(paths.src.img)
     .pipe(imagemin())
-    .pipe(gulp.dest(paths.dist.img))
+    .pipe(gulp.dest(paths.docs.img))
     .pipe(browserSync.stream())
 );
 
 const cleanBuild = () => (
-  gulp.src(paths.dist.self, {allowEmpty: true})
+  gulp.src(paths.docs.self, {allowEmpty: true})
     .pipe(clean())
 );
 
